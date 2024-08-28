@@ -63,7 +63,7 @@ export default function HomeAbout() {
           </div>
         </div>
         <div className="w-1/2">
-          <div className="flex gap-10 mb-10">
+          <div className="flex gap-10 mb-10 w-[75%] mx-auto">
             <div>
               <h2 className="primary-color text-5xl font-semibold text-center flex items-center">
                 3,010 <span className="text-3xl font-bold">+</span>
@@ -81,7 +81,7 @@ export default function HomeAbout() {
               </p>
             </div>
           </div>
-          <div className="size-[75%] relative">
+          <div className="size-[75%] relative mx-auto">
             <div className="absolute top-[-25px] left-[-25px] z-10">
               <div className="size-[200px] rounded-full relative spin">
                 {SplitText.map((content, index) => (

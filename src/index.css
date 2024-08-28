@@ -36,13 +36,18 @@
     .icon-bg{
         background: #0099E2;
     }
-    /* .icon-bg:nth-child(even){
-        background: #0099E2;
+
+    .bg-animate1{
+        animation: bgAnimate1 15s linear infinite;
     }
-    .icon-bg:nth-child(even){
-        background: #FA4318;
+    @keyframes bgAnimate1 {
+        0%,100%{
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translateX(40px);
+        }
     }
-    .icon-bg:nth-child(n+3){
-        background: #28Bc00;
-    } */
+
+    
   }
