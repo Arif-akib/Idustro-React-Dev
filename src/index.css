@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: .5px rgb(226, 226, 226);
+    }
+    .font-outline-4 {
+        -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+      }
+
+    .spinText{
+        transform-origin: 0 100px;
+        position: absolute;
+        left: 50%;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .spin{
+        animation: animateSpin 15s linear infinite;
+   }
+
+    @keyframes animateSpin {
+        to{rotate: 360deg;}
+    }
+
+    .primary-background{
+        background: #FA4318;
+    }
+
+    .primary-color{
+        color: #FA4318;
+    }
+
+    .icon-bg{
+        background: #0099E2;
+    }
+    /* .icon-bg:nth-child(even){
+        background: #0099E2;
+    }
+    .icon-bg:nth-child(even){
+        background: #FA4318;
+    }
+    .icon-bg:nth-child(n+3){
+        background: #28Bc00;
+    } */
+  }
