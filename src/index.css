@@ -49,5 +49,23 @@
         }
     }
 
+    .bg-animate2{
+        animation: bgAnimate2 8s linear infinite;
+    }
+    @keyframes bgAnimate2 {
+        0%,100%{
+            transform: translate(0px, 0px);
+        }
+        25%{
+            transform: translate(40px ,0px);
+        }
+        50%{
+            transform: translate(40px ,40px);
+        }
+        75%{
+            transform: translate(0px ,40px);
+        }
+    }
+
     
   }

@@ -71,7 +71,7 @@ export default function HomeService() {
   ];
   return (
     <>
-      <div className="mt-20 pb-[100px] relative">
+      <div className="mt-20 pb-[140px] relative">
         <div className="flex flex-col items-center justify-center pt-[100px] bg-[url('/src/assets/images/background/bg-background.jpg')] pb-[200px]">
           <p className="text-[#FA4318] text-lg font-bold mb-[-70px]">
             Our Awesome Services
@@ -98,7 +98,7 @@ export default function HomeService() {
           >
             {contents.map((content, index) => (
               <>
-                <SwiperSlide key={index} className="mb-5 overflow-hidden">
+                <SwiperSlide key={index}  className="mb-5 overflow-hidden">
                   <div className="group relative size-[100%] pb-5 h-[250px] w-full">
                     <img
                       src={content.bg}
@@ -196,7 +196,7 @@ export default function HomeService() {
              
           </Swiper>
         </div>
-        <img src="/src/assets/images/background/ite-vector-left.png" alt="" className="absolute -bottom-10 h-[250px] bg-animate1"/>
+        <img src="/src/assets/images/background/ite-vector-left.png" alt="" className="absolute bottom-5 h-[250px] bg-animate1"/>
       </div>
     </>
   );

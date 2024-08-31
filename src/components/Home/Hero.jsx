@@ -99,11 +99,13 @@ export default function Hero() {
                       <i className="fa-solid fa-chevron-right text-sm"></i>
                     </button>
                   </div>
-                  <div className="z-10">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                  </div>
+                  {/* <div className="">
+                    <img src="/src/assets/images/background/vt-7.png" alt=""  className={
+                        index == currentIndex
+                        ? "text-lg translate-x-[0] duration-1000 opacity-100 delay-300 ease-linear absolute translate-y-[100%] origin-left"
+                          : "text-lg -translate-x-[100%] opacity-0 absolute"
+                      }/>
+                  </div> */}
                 </div>
               ))}
             </div>
