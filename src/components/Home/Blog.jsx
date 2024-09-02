@@ -24,66 +24,78 @@ export default function HomeBlog() {
   };
   const contents = [
     {
-          bg: b1,
-        type:"industry",
+      bg: b1,
+      type: "industry",
       heading: "Utilization of Titanimun In Industries",
       writer: "David parker",
-          date: "04 Jan 2022",
-            date2:"4TH Jan'2022",
+      date: "04 Jan 2022",
+      date2: "4TH Jan'2022",
       text: "The Supply from the standard in addition to customized",
-      },
-      {
-          bg: b2,
-          type:"industry",
-        heading: "The Role Of The CNC Machine Operator",
-        writer: "David parker",
-            date: "29 Dec 2021",
-              date2:"29TH Dec'2021",
-        text: "The Supply from the standard in addition to customized",
-      },
-      {
-          bg: b3,
-          type:"factory",
-        heading: "The various Industries That Take advantage",
-        writer: "David parker",
-            date: "29 Dec 2021",
-              date2:"29TH Dec'2021",
-        text: "The Supply from the standard in addition to customized",
-      },
-      {
-          bg: b4,
-          type:"factory",
-        heading: "construction Industry Heading Upwrite Using",
-        writer: "David parker",
-            date: "29 Dec 2021",
-              date2:"29TH Dec'2021",
-        text: "The Supply from the standard in addition to customized",
-      },
-      {
-          bg: b5,
-          type:"Construction",
-        heading: "Key headlines for the best pharmaceutical",
-        writer: "David parker",
-            date: "11 Nov 2021",
-              date2:"11TH Nov'2021",
-        text: "The Supply from the standard in addition to customized",
-      },
-      {
-          bg: b6,
-          type:"factory",
-        heading: "Optimise and improve their capabilities",
-        writer: "David parker",
-            date: "11 nov 2021",
-              date2:"11TH Nov'2021",
-        text: "The Supply from the standard in addition to customized",
-      },
+    },
+    {
+      bg: b2,
+      type: "industry",
+      heading: "The Role Of The CNC Machine Operator",
+      writer: "David parker",
+      date: "29 Dec 2021",
+      date2: "29TH Dec'2021",
+      text: "The Supply from the standard in addition to customized",
+    },
+    {
+      bg: b3,
+      type: "factory",
+      heading: "The various Industries That Take advantage",
+      writer: "David parker",
+      date: "29 Dec 2021",
+      date2: "29TH Dec'2021",
+      text: "The Supply from the standard in addition to customized",
+    },
+    {
+      bg: b4,
+      type: "factory",
+      heading: "construction Industry Heading Upwrite Using",
+      writer: "David parker",
+      date: "29 Dec 2021",
+      date2: "29TH Dec'2021",
+      text: "The Supply from the standard in addition to customized",
+    },
+    {
+      bg: b5,
+      type: "Construction",
+      heading: "Key headlines for the best pharmaceutical",
+      writer: "David parker",
+      date: "11 Nov 2021",
+      date2: "11TH Nov'2021",
+      text: "The Supply from the standard in addition to customized",
+    },
+    {
+      bg: b6,
+      type: "factory",
+      heading: "Optimise and improve their capabilities",
+      writer: "David parker",
+      date: "11 nov 2021",
+      date2: "11TH Nov'2021",
+      text: "The Supply from the standard in addition to customized",
+    },
   ];
   return (
     <>
-          <div className="pb-16 bg-gray-100 relative">
-              <img src="/src/assets/images/background/img-vector1.png" alt="" className="absolute top-10 left-0"/>
-              <img src="/src/assets/images/background/vt-5.png" alt="" className="absolute top-10 right-0"/>
-              <img src="/src/assets/images/background/ite-vector-left.png" alt="" className="absolute bottom-0 left-0"/>
+      <div className="pb-[130px] bg-gray-100 relative">
+        <img
+          src="/src/assets/images/background/img-vector1.png"
+          alt=""
+          className="absolute top-10 left-0"
+        />
+        <img
+          src="/src/assets/images/background/vt-5.png"
+          alt=""
+          className="absolute top-10 right-0"
+        />
+        <img
+          src="/src/assets/images/background/ite-vector-left.png"
+          alt=""
+          className="absolute bottom-0 left-0 size-[180px]"
+        />
         <div className="flex justify-between items-end pt-[100px] pb-5 px-[10%] z-10 relative">
           <div className="relative flex flex-col">
             <p className="text-[#FA4318] text-lg font-bold mb-[-70px] z-20">
@@ -188,19 +200,19 @@ export default function HomeBlog() {
                           >
                             <path d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 11H8V13H6V11ZM6 15H8V17H6V15ZM10 11H18V13H10V11ZM10 15H15V17H10V15Z"></path>
                           </svg>
-                                        <p className="text-gray-500">{ content.date}</p>
+                          <p className="text-gray-500">{content.date}</p>
                         </div>
                       </div>
                       <div className="w-full ">
-                        <p className="text-3xl font-bold ">
-                          {content.heading}
-                        </p>
+                        <p className="text-3xl font-bold ">{content.heading}</p>
                       </div>
                     </div>
                     <div className="absolute z-10 w-[calc(100%-50px)] h-full top-0 left-0 backdrop-blur-md bg-[#00000065] text-white rounded-l-lg translate-y-[-100%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-300 ease-out">
                       <div className="relative pr-[90px] p-5 flex flex-col gap-5 justify-center h-full">
                         <div className="absolute top-0 right-[-50px] primary-background text-white size-[90px] flex flex-col justify-center items-center">
-                                        <p className="uppercase text-lg text-center">{ content.date2}</p>
+                          <p className="uppercase text-lg text-center">
+                            {content.date2}
+                          </p>
                         </div>
                         <div className="h-0 w-0 border-[25px] border-transparent border-t-[#c2482c] border-l-[#c2482c] absolute top-[90px] right-[-50px]"></div>
                         <p className="text-3xl font-bold">{content.heading}</p>
