@@ -148,8 +148,8 @@ export default function HomeBlog() {
           >
             {contents.map((content, index) => (
               <>
-                <SwiperSlide key={index} className="mb-5 overflow-hidden">
-                  <div className="group relative size-[100%] h-[300px] w-full rounded-lg">
+                <SwiperSlide key={index} className="overflow-hidden">
+                  <div className="group relative h-[300px] w-full rounded-lg">
                     <img
                       src={content.bg}
                       alt=""
@@ -177,7 +177,7 @@ export default function HomeBlog() {
                             </span>
                           </p>
                         </div>
-                        <p className="h-[20px] w-[2px] bg-gray-500"></p>
+                        <p className="h-[20px] w-[.5px] bg-gray-500"></p>
                         <div className="flex items-center gap-2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
