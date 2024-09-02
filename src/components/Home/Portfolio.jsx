@@ -133,8 +133,8 @@ export default function HomePorfolio() {
                   <p
                     className={
                       index == currentIndex
-                        ? "w-[250px] h-[3px] primary-background absolute left-[-220px] z-40 duration-300"
-                        : "w-[250px] h-[3px] primary-background absolute left-[-260px] z-40 opacity-0"
+                        ? "w-[180px] h-[4px] primary-background absolute left-[-150px] z-40 duration-300"
+                        : "w-[180px] h-[4px] primary-background absolute left-[-190px] z-40 opacity-0"
                     }
                   ></p>
                 </div>

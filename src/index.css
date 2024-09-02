@@ -4,7 +4,7 @@
 
 @layer base {
     .font-outline-2 {
-      -webkit-text-stroke: .5px rgb(226, 226, 226);
+      -webkit-text-stroke: .5px rgb(216, 216, 216);
     }
     .font-outline-4 {
         -webkit-text-stroke: 1.5px rgb(0, 0, 0);

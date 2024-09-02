@@ -4,6 +4,8 @@ import HomeService from "../components/Home/Service"
 import HomePorfolio from '../components/Home/Portfolio'
 import HomeProduct from '../components/Home/Product'
 import HomeTeam from "../components/Home/Team"
+import HomeContact from "/src/components/Home/Contact"
+import HomeBlog from "/src/components/Home/Blog"
 export default function Home() {
     return (
         <>
@@ -12,7 +14,9 @@ export default function Home() {
             <HomeService />
             <HomePorfolio />
             <HomeProduct />
-            <HomeTeam/>
+            <HomeTeam />
+            <HomeContact />
+            <HomeBlog/>
         </>
     )
 }
