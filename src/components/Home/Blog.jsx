@@ -149,7 +149,7 @@ export default function HomeBlog() {
             {contents.map((content, index) => (
               <>
                 <SwiperSlide key={index} className="overflow-hidden">
-                  <div className="group relative h-[300px] w-full rounded-lg">
+                  <div className="group relative h-[350px] w-full rounded-lg">
                     <img
                       src={content.bg}
                       alt=""
@@ -192,18 +192,18 @@ export default function HomeBlog() {
                         </div>
                       </div>
                       <div className="w-full ">
-                        <p className="text-2xl font-bold ">
+                        <p className="text-3xl font-bold ">
                           {content.heading}
                         </p>
                       </div>
                     </div>
-                    <div className="absolute z-10 w-[calc(100%-50px)] h-full top-0 left-0 backdrop-blur-lg text-white rounded-l-lg translate-y-[-100%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-300 ease-out shadow-md">
-                      <div className="relative pr-[90px] p-5 flex flex-col gap-5 ">
+                    <div className="absolute z-10 w-[calc(100%-50px)] h-full top-0 left-0 backdrop-blur-md bg-[#00000065] text-white rounded-l-lg translate-y-[-100%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-300 ease-out">
+                      <div className="relative pr-[90px] p-5 flex flex-col gap-5 justify-center h-full">
                         <div className="absolute top-0 right-[-50px] primary-background text-white size-[90px] flex flex-col justify-center items-center">
                                         <p className="uppercase text-lg text-center">{ content.date2}</p>
                         </div>
                         <div className="h-0 w-0 border-[25px] border-transparent border-t-[#c2482c] border-l-[#c2482c] absolute top-[90px] right-[-50px]"></div>
-                        <p className="text-2xl font-bold">{content.heading}</p>
+                        <p className="text-3xl font-bold">{content.heading}</p>
                         <p className="line-clamp-2 text-lg">{content.text}</p>
                         <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase">
                           About Us
