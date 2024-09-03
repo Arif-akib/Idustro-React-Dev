@@ -1,18 +1,13 @@
 import { useEffect, useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 export default function HomeAbout() {
-  const [currentNumber, setCurrentNumver] = useState(0);
-  const IncreaseNumber = () => {
-    setCurrentNumver(currentNumber == 3010 ? 3010 : currentNumber + 1);
-  };
+  const [currentNumber, setCurrentNumver] = useState(false);
+
   const rotateText = " BestBusinessPerformanceAssessment";
   const SplitText = rotateText.split("");
 
-  // useEffect(() => {
-  //     setTimeout(() => {
-  //         IncreaseNumber()
-  //     },10)
-  // })
   return (
     <>
       <div className="mt-[100px] px-[10%] flex gap-20">
@@ -63,29 +58,44 @@ export default function HomeAbout() {
           </div>
         </div>
         <div className="w-1/2">
-          <div className="flex gap-10 mb-10 w-[75%] mx-auto">
-            <div>
-              <h2 className="primary-color text-5xl font-semibold text-center flex items-center">
-                3,010 <span className="text-3xl font-bold">+</span>
-              </h2>
-              <p className="text-xl font-bold text-center pt-2">
-                Satisfied Clients
-              </p>
+          <ScrollTrigger
+            onEnter={() => setCurrentNumver(true)}
+            onExit={() => setCurrentNumver(false)}
+          >
+            <div className="flex gap-10 mb-10 w-[75%] mx-auto">
+              <div>
+                <h2 className="primary-color text-5xl font-semibold text-center flex items-center">
+                  {currentNumber && (
+                    <CountUp start={0} end={3010} duration={1.5}></CountUp>
+                  )}
+
+                  <span className="text-3xl font-bold">+</span>
+                </h2>
+                <p className="text-xl font-bold text-center pt-2">
+                  Satisfied Clients
+                </p>
+              </div>
+              <div>
+                <h2 className="primary-color text-5xl font-semibold text-center flex items-center">
+                  {currentNumber && (
+                    <CountUp start={0} end={528} duration={1.5}></CountUp>
+                  )}
+
+                  <span className="text-3xl font-bold">+</span>
+                </h2>
+                <p className="text-xl font-bold text-center pt-2">
+                  Active Projects
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="primary-color text-5xl font-semibold text-center flex items-center">
-                528 <span className="text-3xl font-bold">+</span>
-              </h2>
-              <p className="text-xl font-bold text-center pt-2">
-                Active Projects
-              </p>
-            </div>
-          </div>
+          </ScrollTrigger>
+
           <div className="size-[75%] relative mx-auto">
             <div className="absolute top-[-25px] left-[-25px] z-10">
               <div className="size-[200px] rounded-full relative spin">
                 {SplitText.map((content, index) => (
-                  <p key={index}
+                  <p
+                    key={index}
                     style={{ transform: `rotate(${index * 10.7}deg)` }}
                     className="spinText"
                   >

@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import NavAdd from "./NavAdd";
 import NavBarContact from "./NavbarContact";
 
@@ -11,10 +12,11 @@ export default function Navbar() {
           <div className="absolute w-[65%] bottom-[-50px] right-0">
             <div className="bg-[#FA4318] h-[85px] text-white flex items-center justify-between w-full pr-[15%] relative">
               <ul className="flex gap-10 text-lg font-semibold items-center">
-                <li>Home</li>
+                <Link to="/"><li>Home</li></Link>
+                <li>Our Services</li>
                 <li>Our Team</li>
-                <li>Our Service</li>
                 <li>Protfolio</li>
+                <li>About Us</li>
                 <li>Contact Us</li>
               </ul>
               <i className="fa-solid fa-magnifying-glass"></i>
