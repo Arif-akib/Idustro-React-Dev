@@ -3,69 +3,88 @@
 @tailwind utilities;
 
 @layer base {
-    .font-outline-2 {
-      -webkit-text-stroke: .5px rgb(216, 216, 216);
-    }
-    .font-outline-4 {
-        -webkit-text-stroke: 1.5px rgb(0, 0, 0);
-      }
-
-    .spinText{
-        transform-origin: 0 100px;
-        position: absolute;
-        left: 50%;
-        font-weight: 600;
-        font-size: 15px;
-    }
-    .spin{
-        animation: animateSpin 15s linear infinite;
-   }
-
-    @keyframes animateSpin {
-        to{rotate: 360deg;}
-    }
-
-    .primary-background{
-        background: #FA4318;
-    }
-
-    .primary-color{
-        color: #FA4318;
-    }
-
-    .icon-bg{
-        background: #0099E2;
-    }
-
-    .bg-animate1{
-        animation: bgAnimate1 15s linear infinite;
-    }
-    @keyframes bgAnimate1 {
-        0%,100%{
-            transform: translateX(0px);
-        }
-        50%{
-            transform: translateX(40px);
-        }
-    }
-
-    .bg-animate2{
-        animation: bgAnimate2 8s linear infinite;
-    }
-    @keyframes bgAnimate2 {
-        0%,100%{
-            transform: translate(0px, 0px);
-        }
-        25%{
-            transform: translate(40px ,0px);
-        }
-        50%{
-            transform: translate(40px ,40px);
-        }
-        75%{
-            transform: translate(0px ,40px);
-        }
-    }
-
-    
+  .font-outline-2 {
+    -webkit-text-stroke: 0.5px rgb(216, 216, 216);
   }
+  .font-outline-4 {
+    -webkit-text-stroke: 1.5px rgb(216, 216, 216);
+  }
+  .font-outline-4-solid {
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  }
+
+  .spinText {
+    transform-origin: 0 100px;
+    position: absolute;
+    left: 50%;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .spin {
+    animation: animateSpin 15s linear infinite;
+  }
+
+  @keyframes animateSpin {
+    to {
+      rotate: 360deg;
+    }
+  }
+
+  .primary-background {
+    background: #fa4318;
+  }
+
+  .primary-color {
+    color: #fa4318;
+  }
+
+  .icon-bg {
+    background: #0099e2;
+  }
+
+  .bg-animate1 {
+    animation: bgAnimate1 15s linear infinite;
+  }
+  @keyframes bgAnimate1 {
+    0%,
+    100% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(40px);
+    }
+  }
+
+  .bg-animate2 {
+    animation: bgAnimate2 8s linear infinite;
+  }
+  @keyframes bgAnimate2 {
+    0%,
+    100% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(40px, 0px);
+    }
+    50% {
+      transform: translate(40px, 40px);
+    }
+    75% {
+      transform: translate(0px, 40px);
+    }
+  }
+
+  .scale-animate {
+    animation: animateScale .5s ease-in-out;
+  }
+
+  @keyframes animateScale {
+    0%,
+    100% {
+      scale: 100%;
+    }
+    50% {
+      scale: 0%;
+    }
+  }
+}

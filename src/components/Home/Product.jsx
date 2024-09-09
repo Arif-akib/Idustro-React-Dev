@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 
+import SheredStar from "../Shared/Star";
+
 import gen from "/src/assets/images/product/gen.png";
 import cap from "/src/assets/images/product/item2-1-150x150.png";
 import drillset from "/src/assets/images/product/drill3-1-150x150.png";
@@ -149,19 +151,7 @@ export default function HomeProduct() {
                           >
                             ${content.newP}
                           </p>
-                          <div className="flex">
-                            {[...Array(Math.floor(content.star))].map((star, index) => (
-                              <div key={index}>
-                                <img src="/src/assets/images/icon/starfull.png" alt="" className="size-[15px]" />
-                              </div>
-                            ))}
-                            <p>{ 5-content.star ==0 ? '' : <img src="/src/assets/images/icon/starhalf.png" alt="" className="size-[15px]"/> }</p>
-                            {[...Array(5-Math.ceil(content.star))].map((star, index) => (
-                              <div key={index}>
-                              <img src="/src/assets/images/icon/star.png" alt="" className="size-[15px]"/>
-                              </div>
-                            ))}
-                          </div>
+                          <SheredStar content={content}/>
                         </div>
                         <div
                           className="text-center bg-black text-white px-5 rounded-xl pt-[80px] shadow-lg absolute top-0 left-0 translate-y-[105%] group-hover:translate-y-0 duration-300 ease-linear
@@ -192,19 +182,7 @@ export default function HomeProduct() {
                           >
                             ${content.newP}
                           </p>
-                          <div className="flex">
-                            {[...Array(Math.floor(content.star))].map((star, index) => (
-                              <div key={index}>
-                                <img src="/src/assets/images/icon/starfull.png" alt="" className="size-[15px]" />
-                              </div>
-                            ))}
-                            <p>{ 5-content.star ==0 ? '' : <img src="/src/assets/images/icon/starhalf.png" alt="" className="size-[15px]"/> }</p>
-                            {[...Array(5-Math.ceil(content.star))].map((star, index) => (
-                              <div key={index}>
-                              <img src="/src/assets/images/icon/star.png" alt="" className="size-[15px]"/>
-                              </div>
-                            ))}
-                          </div>
+                          <SheredStar content={content}/>
                         </div>
                         </div>
                       </div>

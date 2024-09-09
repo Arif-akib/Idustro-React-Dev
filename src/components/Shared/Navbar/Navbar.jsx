@@ -13,9 +13,12 @@ export default function Navbar() {
             <div className="bg-[#FA4318] h-[85px] text-white flex items-center justify-between w-full pr-[15%] relative">
               <ul className="flex gap-10 text-lg font-semibold items-center">
                 <Link to="/"><li>Home</li></Link>
-                <li>Our Services</li>
+                <Link to="/Service"><li>Our Services</li></Link>
+                
                 <li>Our Team</li>
-                <li>Protfolio</li>
+
+                <Link to="/Portfolio"> <li>Portfolio</li></Link>
+               
                 <li>About Us</li>
                 <li>Contact Us</li>
               </ul>
