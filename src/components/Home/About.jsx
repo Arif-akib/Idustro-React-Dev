@@ -16,7 +16,7 @@ export default function HomeAbout() {
 
   return (
     <>
-      <div className="mt-[100px] px-[10%] flex gap-20">
+      <div className="mt-[100px] px-[10%] flex gap-10">
         <div className="w-1/2 relative">
           <h4 className="text-white text-[110px] font-bold font-outline-2 absolute -z-10 top-[-40px] left-[-65px]">
             Assessments
