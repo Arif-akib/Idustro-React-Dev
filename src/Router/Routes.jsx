@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home";
 import Service from '/src/Pages/Service'
 import Portfolio from "../Pages/Portfolio";
-
+import About from '/src/Pages/About'
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path: '/Portfolio',
                 element:<Portfolio/>
+            },
+            {
+                path: '/About_Us',
+                element:<About/>
             },
         ]
     }
