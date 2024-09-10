@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 
+import bg1 from "/src/assets/images/background/ite-vector-left.png"
+
 import petrol1 from "/src/assets/images/icon/factory2.png";
 import petrol2 from "/src/assets/images/home/service-image-single-1-500x405.jpg";
 import metal1 from "/src/assets/images/icon/excavator.png";
@@ -196,7 +198,7 @@ export default function HomeService() {
              
           </Swiper>
         </div>
-        <img src="/src/assets/images/background/ite-vector-left.png" alt="" className="absolute bottom-5 h-[250px] bg-animate1"/>
+        <img src={bg1} alt="" className="absolute bottom-5 h-[250px] bg-animate1"/>
       </div>
     </>
   );

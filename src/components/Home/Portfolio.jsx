@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+import bg1 from '/src/assets/images/icon/image-cile.png'
+import bg2 from "/src/assets/images/icon/play.png"
+
 import build from "/src/assets/images/home/bg-slide-home-1.jpg";
 import indus from "/src/assets/images/home/Energy.jpg";
 import arch from "/src/assets/images/home/service-10.jpg";
@@ -126,7 +129,7 @@ export default function HomePorfolio() {
                 >
                   {content.title}{" "}
                   <img
-                    src="/src/assets/images/icon/play.png"
+                    src={bg2}
                     alt=""
                     className={index == currentIndex ? "size-[15px]" : "hidden"}
                   />
@@ -179,7 +182,7 @@ export default function HomePorfolio() {
           </div>
         </div>
         <img
-          src="/src/assets/images/icon/image-cile.png"
+          src={bg1}
           alt=""
           className="absolute -z-10 -right-16 bottom-0 spin"
         />

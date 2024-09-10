@@ -1,3 +1,6 @@
+import bg1 from '/src/assets/images/background/vt-8.png'
+import bg2 from '/src/assets/images/background/vt-7.png'
+
 import factory from "/src/assets/images/icon/factory1.png";
 import factory2 from "/src/assets/images/icon/factory2.png";
 import gas from "/src/assets/images/icon/dispenser.png";
@@ -39,7 +42,7 @@ export default function BannerGrid() {
                   Read More <i className="fa-solid fa-arrow-right text-sm"></i>
                 </button>
                 <img
-                  src="./src/assets/images/background/vt-8.png"
+                  src={bg1}
                   alt=""
                   className="absolute top-[5%] right-0 size-[80px]"
                 />
@@ -59,7 +62,7 @@ export default function BannerGrid() {
                   Read More <i className="fa-solid fa-arrow-right text-sm"></i>
                 </button>
                 <img
-                  src="./src/assets/images/background/vt-7.png"
+                  src={bg2}
                   alt=""
                   className="absolute top-[5%] right-0 size-[120px]"
                 />

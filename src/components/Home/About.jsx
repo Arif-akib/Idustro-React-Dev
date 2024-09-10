@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
+import bg1 from '/src/assets/images/icon/engineer.png'
+import bg2 from '/src/assets/images/icon/settings.png'
+import bg3 from '/src/assets/images/icon/phone-call.png'
+import bg4 from '/src/assets/images/home/image-banner.jpg'
+import bg5 from '/src/assets/images/icon/image-cile.png'
+
 export default function HomeAbout() {
   const [currentNumber, setCurrentNumver] = useState(false);
 
@@ -29,11 +35,11 @@ export default function HomeAbout() {
           </p>
           <div className="grid grid-cols-2 gap-10 py-8 border-b">
             <div className="flex items-center gap-3">
-              <img src="/src/assets/images/icon/engineer.png" alt="" />
+              <img src={bg1} alt="" />
               <h3 className="text-2xl font-bold">Strengthening society</h3>
             </div>
             <div className="flex items-center gap-3">
-              <img src="/src/assets/images/icon/settings.png" alt="" />
+              <img src={bg2} alt="" />
               <h3 className="text-2xl font-bold">Driving the economy</h3>
             </div>
           </div>
@@ -45,7 +51,7 @@ export default function HomeAbout() {
             <div className="flex items-center gap-3">
               <div className="size-[55px] rounded-full bg-[#e6e6e6] flex items-center justify-center animate-pulse">
                 <img
-                  src="/src/assets/images/icon/phone-call.png"
+                  src={ bg3}
                   alt=""
                   className="size-[25px]"
                 />
@@ -107,19 +113,19 @@ export default function HomeAbout() {
             <div className="size-[100%] relative overflow-hidden rounded-3xl">
               <div className="relative">
                 <img
-                  src="/src/assets/images/icon/image-cile.png"
+                  src={ bg5}
                   alt=""
                   className="absolute top-[-50px] left-[-50px] size-[250px] spin"
                 />
               </div>
 
               <img
-                src="/src/assets/images/home/image-banner.jpg"
+                src={ bg4}
                 alt=""
                 className="size-full aspect-square object-cover"
               />
               <img
-                src="/src/assets/images/icon/image-cile.png"
+                src={bg5}
                 alt=""
                 className="absolute bottom-[-150px] right-[-150px] size-[400px] spin"
               />
