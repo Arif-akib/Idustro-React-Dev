@@ -39,7 +39,7 @@ export default function BannerGrid() {
                   Read More <i className="fa-solid fa-arrow-right text-sm"></i>
                 </button>
                 <img
-                  src={"/src/assets/images/background/vt-8.png"}
+                  src={"./src/assets/images/background/vt-8.png"}
                   alt=""
                   className="absolute top-[5%] right-0 size-[80px]"
                 />
@@ -59,7 +59,7 @@ export default function BannerGrid() {
                   Read More <i className="fa-solid fa-arrow-right text-sm"></i>
                 </button>
                 <img
-                  src={"/src/assets/images/background/vt-7.png"}
+                  src={"./src/assets/images/background/vt-7.png"}
                   alt=""
                   className="absolute top-[5%] right-0 size-[120px]"
                 />
