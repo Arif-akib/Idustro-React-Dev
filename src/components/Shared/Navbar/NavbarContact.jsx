@@ -2,7 +2,7 @@ export default function NavBarContact() {
     return (
         <>
             <div className="px-[10%] flex pt-3 justify-between bg-white">
-                <img src="/src/assets/images/logo/logo.png" alt="" className="h-[70px] my-3" />
+                <img src="/public/logo/logo.png" alt="" className="h-[70px] my-3" />
                 <div className="flex gap-10">
                     <div className="flex gap-5">
                         <i className="fa-solid fa-phone-volume text-[#FA4318] text-3xl"></i>
