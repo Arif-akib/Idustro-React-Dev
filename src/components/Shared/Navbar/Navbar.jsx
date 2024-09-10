@@ -5,7 +5,7 @@ import NavBarContact from "./NavbarContact";
 export default function Navbar() {
   return (
     <>
-      <div className="relative z-50">
+      <div className="relative top-0 z-50">
         <div className="relative">
           <NavAdd />
           <NavBarContact />
