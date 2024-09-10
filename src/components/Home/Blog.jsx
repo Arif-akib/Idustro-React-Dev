@@ -3,6 +3,10 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 
+import bg1 from "/src/assets/images/background/img-vector1.png"
+import bg2 from "/src/assets/images/background/vt-5.png"
+import bg3 from "/src/assets/images/background/ite-vector-left.png"
+
 import b1 from "/src/assets/images/blog/img-33.jpg";
 import b2 from "/src/assets/images/blog/image-23.jpg";
 import b3 from "/src/assets/images/blog/chemical_22.jpg";
@@ -82,17 +86,17 @@ export default function HomeBlog() {
     <>
       <div className="pb-[130px] bg-gray-100 relative">
         <img
-          src="/src/assets/images/background/img-vector1.png"
+          src={bg1}
           alt=""
           className="absolute top-10 left-0"
         />
         <img
-          src="/src/assets/images/background/vt-5.png"
+          src={bg2}
           alt=""
           className="absolute top-10 right-0"
         />
         <img
-          src="/src/assets/images/background/ite-vector-left.png"
+          src={bg3}
           alt=""
           className="absolute bottom-0 left-0 size-[180px]"
         />

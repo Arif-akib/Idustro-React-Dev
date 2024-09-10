@@ -1,3 +1,11 @@
+import logo from "/src/assets/images/logo/logo-light.png"
+import g1 from "/src/assets/images/Gallery/gallery-1.jpg"
+import g2 from "/src/assets/images/Gallery/gallery-2.jpg"
+  import g3 from "/src/assets/images/Gallery/gallery-3.jpg"
+  import g4 from "/src/assets/images/Gallery/gallery-4.jpg"
+  import g5 from "/src/assets/images/Gallery/gallery-5.jpg"
+  import g6 from "/src/assets/images/Gallery/gallery-6.jpg"
+
 export default function Footer() {
   return (
     <>
@@ -5,7 +13,7 @@ export default function Footer() {
         <div className="py-20 grid grid-cols-4 gap-10 border-b border-b-zinc-600">
           <div className="space-y-8">
             <img
-              src="/src/assets/images/logo/logo-light.png"
+              src={logo}
               alt=""
               className="w-full"
             />
@@ -88,22 +96,22 @@ export default function Footer() {
             </div>
             <div className="grid grid-cols-3 gap-3">
               <div>
-                <img src="/src/assets/images/Gallery/gallery-1.jpg" alt="" />
+                <img src={g1} alt="" />
               </div>
               <div>
-                <img src="/src/assets/images/Gallery/gallery-2.jpg" alt="" />
+                <img src={g2} alt="" />
               </div>
               <div>
-                <img src="/src/assets/images/Gallery/gallery-3.jpg" alt="" />
+                <img src={g3} alt="" />
               </div>
               <div>
-                <img src="/src/assets/images/Gallery/gallery-4.jpg" alt="" />
+                <img src={g4} alt="" />
               </div>
               <div>
-                <img src="/src/assets/images/Gallery/gallery-5.jpg" alt="" />
+                <img src={g5} alt="" />
               </div>
               <div>
-                <img src="/src/assets/images/Gallery/gallery-6.jpg" alt="" />
+                <img src={g6} alt="" />
               </div>
             </div>
           </div>

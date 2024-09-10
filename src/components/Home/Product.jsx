@@ -5,6 +5,11 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import SheredStar from "../Shared/Star";
 
+import bg1 from "/src/assets/images/background/img-vector1.png"
+import bg2 from "/src/assets/images/background/vt-2.png"
+import bg3 from "/src/assets/images/background/ite-vector-left.png"
+import bg4 from "/src/assets/images/background/vt-5.png"
+
 import gen from "/src/assets/images/product/gen.png";
 import cap from "/src/assets/images/product/item2-1-150x150.png";
 import drillset from "/src/assets/images/product/drill3-1-150x150.png";
@@ -89,12 +94,12 @@ export default function HomeProduct() {
           </h1>
           <p className="h-[2px] w-[60px] bg-[#FA4318] rounded-md mt-5 z-20"></p>
           <img
-            src="/src/assets/images/background/img-vector1.png"
+            src={bg1}
             alt=""
             className="absolute top-0 left-[13%]"
           />
           <img
-            src="/src/assets/images/background/vt-2.png"
+            src={bg2}
             alt=""
             className="absolute top-0 right-[10%] bg-animate2"
           />
@@ -237,12 +242,12 @@ export default function HomeProduct() {
           </Swiper>
         </div>
         <img
-          src="/src/assets/images/background/ite-vector-left.png"
+          src={bg3}
           alt=""
           className="absolute bottom-5 h-[250px] bg-animate1 z-0"
         />
         <img
-          src="/src/assets/images/background/vt-5.png"
+          src={bg4}
           alt=""
           className="absolute bottom-0 right-0 z-0"
         />
