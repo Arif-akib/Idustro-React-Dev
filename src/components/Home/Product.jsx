@@ -193,8 +193,8 @@ export default function HomeProduct() {
                       </div>
 
                       <div className="flex justify-center absolute z-30 -bottom-4 w-full">
-                        <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
-                          About Us
+                        <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[160px] rounded uppercase">
+                          ADD To cart
                           <i className="fa-solid fa-chevron-right text-sm"></i>
                         </button>
                       </div>
