@@ -95,7 +95,7 @@ export default function Hero() {
                           : "font-bold text-lg text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase -translate-y-[600%] opacity-0"
                       }
                     >
-                      Our Services{" "}
+                      Our Services
                       <i className="fa-solid fa-chevron-right text-sm"></i>
                     </button>
                   </div>

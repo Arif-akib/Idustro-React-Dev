@@ -16,10 +16,8 @@ export default function Navbar() {
                 <Link to="/Service"><li>Our Services</li></Link>
                 <Link to="/Our_Team"><li>Our Team</li></Link>
                 <Link to="/Portfolio"><li>Portfolio</li></Link>
-                <Link to="/About_Us"> <li>About Us</li></Link>
-               
-                
-                <li>Contact Us</li>
+                <Link to="/About_Us"><li>About Us</li></Link>
+                <Link to="/Contact"><li>Contact Us</li></Link>
               </ul>
               <i className="fa-solid fa-magnifying-glass"></i>
               <div className="h-0 w-0 border-[42.5px] border-transparent border-r-[#FA4318] border-b-[#FA4318] absolute translate-x-[-100%]"></div>
