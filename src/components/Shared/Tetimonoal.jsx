@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 
-import SheredStar from "../Shared/Star";
+import SheredStar from "./Star";
 
 import c1 from "/src/assets/images/client/author2.jpg";
 import c2 from "/src/assets/images/client/author3.jpg";
 import c3 from "/src/assets/images/client/avata-2-77x77.jpg";
 import c4 from "/src/assets/images/client/testi-2-77x77.jpg";
 
-export default function ServiceClients() {
+export default function Testimonial() {
   const swiperRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -54,9 +54,9 @@ export default function ServiceClients() {
   ];
   return (
     <>
-      <div className="py-[130px] relative">
+      <div className="pt-32 pb-16 relative">
         <div className="relative flex flex-col px-[10%] justify-center items-center pb-5">
-          <p className="text-[#FA4318] pb-1 text-lg font-bold ">Latest blog</p>
+          <p className="text-[#FA4318] pb-1 text-lg font-bold ">Testimonial</p>
           <h1 className="text-5xl font-bold text-center leading-normal">
             Happy Client Says <br /> About Us
           </h1>

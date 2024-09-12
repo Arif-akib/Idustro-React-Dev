@@ -22,7 +22,7 @@ export default function AboutApproch() {
     ]
   return (
     <>
-      <div className="pt-32 bg-gray-100 px-[10%]">
+      <div className="py-32 bg-gray-100 px-[10%]">
         <div>
           <p className="text-lg font-bold primary-color text-center pb-3">
             Our Approch

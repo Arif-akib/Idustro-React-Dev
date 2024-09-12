@@ -3,7 +3,7 @@ import Servicegrid from '../components/Service/ServiceGrid'
 import ServiceContact from '../components/Service/Contact'
 import ServiceWork from '../components/Service/Work'
 import ServiceSkills from '/src/components/Service/Skills'
-import ServiceClients from "/src/components/Service/Client"
+import ServiceClients from "/src/components/Shared/Tetimonoal"
 export default function Service() {
     const HeroLable ='What We Do'
     return (

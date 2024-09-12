@@ -42,7 +42,7 @@ export default function ServiceWork() {
           <h2 className="text-5xl font-bold">Our Company Working Process</h2>
           <div className="pt-10 space-y-10">
             {works.map((work, index) => (
-              <div className="group flex gap-3 items-center">
+              <div key={index} className="group flex gap-3 items-center">
                 <p className="text-6xl font-outline-4 group-hover:font-outline-4-solid group-hover:scale-animate font-bold text-transparent duration-500 ease-in-out">
                   {work.mumber}
                 </p>
