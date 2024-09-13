@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 
-import bg1 from "/src/assets/images/background/ite-vector-left.png"
+import bg1 from "/src/assets/images/background/ite-vector-left.png";
 
 import petrol1 from "/src/assets/images/icon/factory2.png";
 import petrol2 from "/src/assets/images/home/service-image-single-1-500x405.jpg";
@@ -19,12 +19,21 @@ export default function HomeService() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slideLeft = () => {
-    swiperRef.current.slidePrev()
+    swiperRef.current.slidePrev();
     setCurrentIndex(currentIndex == 0 ? contents.length - 1 : currentIndex - 1);
   };
   const slideRight = () => {
-    swiperRef.current.slideNext()
+    swiperRef.current.slideNext();
     setCurrentIndex(currentIndex == contents.length - 1 ? 0 : currentIndex + 1);
+  };
+  const navi = (index) => {
+    if (currentIndex < index) {
+      slideRight();
+      setCurrentIndex(index);
+    } else if (currentIndex > index) {
+      slideLeft();
+      setCurrentIndex(index);
+    }
   };
   const contents = [
     {
@@ -100,7 +109,7 @@ export default function HomeService() {
           >
             {contents.map((content, index) => (
               <>
-                <SwiperSlide key={index}  className="mb-5 overflow-hidden">
+                <SwiperSlide key={index} className="mb-5 overflow-hidden">
                   <div className="group relative size-[100%] pb-5 h-[250px] w-full">
                     <img
                       src={content.bg}
@@ -179,26 +188,51 @@ export default function HomeService() {
               </>
             ))}
             <div className="flex gap-3 items-center justify-center">
-            <button onClick={slideLeft} className="hover:primary-color">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path></svg>
+              <button onClick={slideLeft} className="hover:primary-color">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                >
+                  <path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path>
+                </svg>
               </button>
-              <div className="font-semibold flex gap-2">
+              <div className="font-semibold flex gap-2 cursor-pointer">
                 {contents.map((content, index) => (
-                  <p key={index} className={index == currentIndex ? 'primary-color' : ''}>
-                    <span>{index <= 9 ? 0 : ''}</span>
-                    {index + 1}
-                    <span> {index < contents.length - 1 ? '/' : ''}</span>
+                  <p
+                    key={index}
+                    onClick={() => {
+                      navi(index);
+                    }}
+                    className={index == currentIndex ? "primary-color" : ""}
+                  >
+                    <span>{index <= 9 ? 0 : ""}</span>
+                    <span>{index + 1}</span>
+                    <span> {index < contents.length - 1 ? "/" : ""}</span>
                   </p>
                 ))}
-                </div>
+              </div>
               <button onClick={slideRight} className="hover:primary-color">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 13H4V11H12V4L20 12L12 20V13Z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                >
+                  <path d="M12 13H4V11H12V4L20 12L12 20V13Z"></path>
+                </svg>
               </button>
             </div>
-             
           </Swiper>
         </div>
-        <img src={bg1} alt="" className="absolute bottom-5 h-[250px] bg-animate1"/>
+        <img
+          src={bg1}
+          alt=""
+          className="absolute bottom-5 h-[250px] bg-animate1"
+        />
       </div>
     </>
   );

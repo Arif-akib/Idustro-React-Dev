@@ -22,6 +22,17 @@ export default function Testimonial() {
     swiperRef.current.slideNext();
     setCurrentIndex(currentIndex == contents.length - 1 ? 0 : currentIndex + 1);
   };
+
+  const navi = (index) => {
+    console.log(currentIndex, index);
+    if (currentIndex < index) {
+      slideRight();
+      setCurrentIndex(index);
+    } else if (currentIndex > index) {
+      slideLeft();
+      setCurrentIndex(index);
+    }
+  };
   const contents = [
     {
       bg: c1,
@@ -105,7 +116,10 @@ export default function Testimonial() {
         </div>
         <div className="flex gap-3 items-center justify-center px-[10%]">
           {contents.map((content, index) => (
-            <p
+            <p 
+            onClick={() => {
+              navi(index);
+            }}
               key={index}
               className={
                 index == currentIndex

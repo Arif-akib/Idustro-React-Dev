@@ -127,7 +127,7 @@ export default function HomePorfolio() {
                       : "text-2xl font-semibold mb-5 flex gap-2 items-center"
                   }
                 >
-                  {content.title}{" "}
+                  <p onClick={()=>(setCurrentIndex(index))} className=" cursor-pointer">{content.title}</p>
                   <img
                     src={bg2}
                     alt=""
