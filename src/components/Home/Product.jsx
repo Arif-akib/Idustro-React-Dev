@@ -29,6 +29,15 @@ export default function HomeProduct() {
     swiperRef.current.slideNext();
     setCurrentIndex(currentIndex == contents.length - 1 ? 0 : currentIndex + 1);
   };
+  const navi = (index) => {
+    if (currentIndex < index) {
+      slideRight();
+      setCurrentIndex(index);
+    } else if (currentIndex > index) {
+      slideLeft();
+      setCurrentIndex(index);
+    }
+  };
   const contents = [
     {
       img: gen,
@@ -215,9 +224,10 @@ export default function HomeProduct() {
                   <path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path>
                 </svg>
               </button>
-              <div className="font-semibold flex gap-2">
+              <div className="font-semibold flex gap-2 cursor-pointer">
                 {contents.map((content, index) => (
                   <p
+                    onClick={()=>{navi(index)}}
                     key={index}
                     className={index == currentIndex ? "primary-color" : ""}
                   >
